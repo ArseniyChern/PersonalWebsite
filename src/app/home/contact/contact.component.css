@@ -1,0 +1,45 @@
+:host {
+    background-color: #efefef;
+}
+
+.element {
+    width: 100%;
+    background-color: #efefef;
+    ;
+}
+
+.info {
+    line-height: 2em;
+}
+
+.wrapper {
+    padding-top: 2em;
+    background-color: #efefef;
+}
+
+.input-email {
+    background-color: #efefef;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.example-full-width {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: #f4f5f7;
+    margin-bottom: 2em;
+}
+
+.error {
+    color: red;
+    background-color: lightcoral;
+}
+
+@media(max-width:1250) {
+    .submit-btn {
+        margin-left: 50% !important;
+    }
+}

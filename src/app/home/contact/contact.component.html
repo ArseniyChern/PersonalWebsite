@@ -1,0 +1,30 @@
+<div class="element">
+    <div class="container wrapper">
+        <h1> Contact </h1>
+
+        <div class="row justify-content-center">
+            <h5 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 info">Simply enter your name and email and I will get back to you on the next business day! Hassle-free, right? (Alternative contact info below)</h5>
+
+
+            <mat-form-field class="col-lg-12 col-md-12 col-sm-12 col-xs-12 example-full-width">
+                <input matInput name="name" class="input-email" placeholder="Enter Name" type="text" [(ngModel)]="nameText" #name="ngModel" required>
+            </mat-form-field>
+
+            <div *ngIf="(name.invalid && (name.dirty || name.touched)) || nameInvalid" class="error">
+                <h6 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Please enter a name</h6>
+            </div>
+
+
+            <mat-form-field class="col-lg-12 col-md-12 col-sm-12 col-xs-12 example-full-width">
+                <input matInput name="email" class="input-email" placeholder="Enter Email" type="email" [(ngModel)]="emailText" #email="ngModel" required email="true">
+            </mat-form-field>
+
+            <div *ngIf="(email.invalid && (email.dirty || email.touched)) || emailInvalid" class="error">
+                <h6 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Invalid Email</h6>
+            </div>
+
+
+            <button (click)="requestContact(email,name)" mat-button class="col-lg-12 col-lg-offset-4 col-md-12 col-sm-12 col-xs-12 submit-btn">Submit</button>
+        </div>
+    </div>
+</div>
