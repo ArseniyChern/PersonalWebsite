@@ -2,6 +2,10 @@
     padding-bottom: 2em;
 }
 
+.images:hover {
+    height: 205px !important;
+}
+
 .wrapper {
     width: 100%;
     background-color: #fafafa !important;
@@ -24,6 +28,9 @@
         display: flex;
         justify-content: center;
     }
+    .images:hover {
+        height: 31em !important;
+    }
 }
 
 @media(max-width:618px) {
@@ -34,7 +41,7 @@
 }
 
 .images-eclipse {
-    margin-left: 5%;
+    margin-left: -5%;
     margin-right: 5%;
     opacity: 1.0;
 }
