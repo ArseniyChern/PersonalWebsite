@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import * as $ from 'jquery';
+import * as $ from "jquery";
 
 @Component({
   selector: "app-header",
@@ -9,13 +9,23 @@ import * as $ from 'jquery';
 export class HeaderComponent implements OnInit {
   constructor() {}
 
-  navigateTo(to:string,duration:number) {
-      $('html, body').animate({
-          scrollTop: $('#'+to).offset().top
-      }, duration);
+  navigateTo(to: string, duration: number) {
+    if (to === "contact") {
+      $("html, body").animate(
+        {
+          scrollTop: $("#" + "footer").offset().top
+        },
+        1000
+      );
+      return;
+    }
+    $("html, body").animate(
+      {
+        scrollTop: $("#" + to).offset().top
+      },
+      duration
+    );
   }
-
-  
 
   ngOnInit() {}
 }

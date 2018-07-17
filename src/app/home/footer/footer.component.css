@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+.footer {
+    background-color: #bcbcbc;
+    width: 100%;
+}
+
+.arseniy-row {
+    margin-top: 4em;
+}
+
+.bottom {
+    position: relative;
+    bottom: 0;
+}
+
+.contactLinks {
+    float: right;
+    margin-right: 4em;
+    margin-top: 5vh;
+}
+
+.copyrightText {
+    font-style: bold;
+    font-size: 1em;
+}
+
+.contactLink {
+    font-family: 'Oswald';
+}
+
+.chernykh-row {
+    margin-bottom: 4em;
+}
+
+.center {
+    width: 1em;
+    margin-left: 85%;
+}
+
+.name-header {
+    font-family: 'Oswald';
+    font-size: 7vw;
+    margin-left: 2vw;
+    margin-top: 5vh;
+}
+
+@media(max-width:1200px) {
+    .contactLinks {
+        float: none;
+        margin: none;
+    }
+}
+
+@media(max-width:1400px) {
+    .center {
+        margin-left: 80%;
+    }
+}
+
+@media(max-width:1000px) {
+    .center {
+        margin-left: 70%;
+    }
+}
+
+@media(max-width:700px) {
+    .center {
+        margin-left: 60%;
+    }
+}
+
+@media(max-width:500px) {
+    .center {
+        margin-left: 50%;
+        width: 50%;
+    }
+}
+
+@media(max-width:1200px) {
+    .contactLinks {
+        width: 3.2in;
+        margin: auto;
+        margin-top: .3in;
+        margin-left: 30vw;
+    }
+    .name-header {
+        font-size: 12vw;
+        margin-top: 0px;
+        margin-left: 23vw;
+    }
+    .footer {
+        padding-top: .5in;
+    }
+    .center {
+        height: 1em !important;
+    }
+}
+
+@media(max-width:513px) {
+    .contactLinks {
+        width: 95%;
+        margin-left: 5%;
+    }
+}

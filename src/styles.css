@@ -4,3 +4,7 @@
     font-family: 'Open Sans';
     -webkit-font-smoothing: subpixel-antialiased;
 }
+
+html {
+    height: 100%;
+}

@@ -12,6 +12,7 @@ import { ToolsComponent } from "./home/tools/tools.component";
 import { ContactComponent } from "./home/contact/contact.component";
 import { FooterComponent } from "./home/footer/footer.component";
 import { AboutComponent } from "./home/about/about.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { AboutComponent } from "./home/about/about.component";
     AboutComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
+    HttpClientModule,
     MatInputModule,
     MatButtonModule,
     BrowserAnimationsModule,

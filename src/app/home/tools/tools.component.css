@@ -1,11 +1,3 @@
-.images {
-    padding-bottom: 2em;
-}
-
-.images:hover {
-    height: 205px !important;
-}
-
 .wrapper {
     width: 100%;
     background-color: #fafafa !important;
@@ -17,7 +9,52 @@
     padding-bottom: 2em;
 }
 
+.image-grid {
+    margin: auto;
+}
+
+.wrapper-image-grid {
+    margin-left: 1.5in;
+}
+
+.images {
+    margin-bottom: 3em;
+    opacity: .7;
+    animation-name: hoveroff;
+    animation-duration: .1s;
+}
+
+.images:hover {
+    opacity: 1;
+    animation-name: hoveron;
+    animation-duration: .1s;
+}
+
+@keyframes hoveron {
+    from {
+        opacity: .7;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hoveroff {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: .7;
+    }
+}
+
 @media(max-width:990px) {
+    .image-grid {
+        margin: 0px;
+    }
+    .wrapper-image-grid {
+        margin-left: 0px;
+    }
     .title {
         margin: auto;
         width: 13%;
@@ -27,9 +64,29 @@
         height: 30em;
         display: flex;
         justify-content: center;
+        animation-name: larger-reversed;
+        animation-duration: .2s;
     }
     .images:hover {
-        height: 31em !important;
+        height: 31em;
+        animation-name: larger;
+        animation-duration: .2s;
+    }
+    @keyframes larger {
+        from {
+            height: 30em;
+        }
+        to {
+            height: 31em !important;
+        }
+    }
+    @keyframes larger-reversed {
+        from {
+            height: 31em;
+        }
+        to {
+            height: 30em !important;
+        }
     }
 }
 
@@ -37,15 +94,28 @@
     .images {
         height: 15em;
         margin-left: 30%;
+        animation-name: larger-reversed;
+        animation-duration: .2s;
     }
-}
-
-.images-eclipse {
-    margin-left: -5%;
-    margin-right: 5%;
-    opacity: 1.0;
-}
-
-images-eclipse:hover {
-    opacity: 0.5;
+    .images:hover {
+        height: 16em !important;
+        animation-name: larger;
+        animation-duration: .2s;
+    }
+    @keyframes larger {
+        from {
+            height: 15em;
+        }
+        to {
+            height: 16em !important;
+        }
+    }
+    @keyframes larger-reversed {
+        from {
+            height: 16em;
+        }
+        to {
+            height: 15em !important;
+        }
+    }
 }

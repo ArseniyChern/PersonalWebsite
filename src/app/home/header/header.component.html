@@ -1,36 +1,36 @@
 <div>
-  <div class="header-blue">
-      <nav class="navbar navbar-default navigation-clean-search">
-          <div class="container">
+    <div class="header-blue">
+        <nav class="navbar navbar-default navigation-clean-search">
+            <div class="container">
 
-              <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Arseniy Chernykh</a>
-                  <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-              </div>
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Arseniy Chernykh</a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
 
-              <div class="collapse navbar-collapse" id="navcol-1">
-                  <ul class="nav navbar-nav">
-                      <li> <a (click)="navigateTo('about',1000)">About Me</a> </li>
-                      <li> <a (click)="navigateTo('tools',1500)">My Tools</a> </li>
-                      <li> <a (click)="navigateTo('contact',2000)">Contact</a> </li>
-                  </ul>
-              </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li> <a class="navigateToLink" (click)="navigateTo('about',1000)">About Me</a> </li>
+                        <li> <a class="navigateToLink" (click)="navigateTo('tools',1500)">My Tools</a> </li>
+                        <li> <a class="navigateToLink" (click)="navigateTo('contact',2000)">Contact</a> </li>
+                    </ul>
+                </div>
 
-          </div>
-      </nav>
+            </div>
+        </nav>
 
-      <div class="container hero">
-          <div class="row">
-              <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0">
-                  <h1>Arseniy Chernykh</h1>
-                  <p>Software Development Expert </p>
-                  <button class="btn btn-default btn-lg action-button" type="button">Skip the mumbo-jumbo</button>
-              </div>
-              <div class="col-lg-5 col-lg-offset-0 col-md-5 hidden-xs hidden-sm phone-holder">
-                  <div class="iphone-mockup"><img height="500px" src="../../assets/Arseniy.png">
-                      <div class="screen"></div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+        <div class="container hero">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0">
+                    <h1>Arseniy Chernykh</h1>
+                    <p>Software Development Expert </p>
+                    <button id="skipMumboButton" class="btn btn-default btn-lg action-button" (click)="navigateTo('contact',2000)" type="button">Skip the mumbo-jumbo</button>
+                </div>
+                <div class="col-lg-5 col-lg-offset-0 col-md-5 hidden-xs hidden-sm phone-holder">
+                    <div class="iphone-mockup"><img height="500px" src="../../assets/Arseniy.png">
+                        <div class="screen"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
