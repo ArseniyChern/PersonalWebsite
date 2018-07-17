@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: arseniychernykh
+Build-Jdk: 10.0.1
+Implementation-Title: AlternetProjectWebsite
+Implementation-Version: 0.0.1-BUILD
+Implementation-Vendor-Id: com.alternet
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/AlternetProjectWebsite
+Created-By: Maven Integration for Eclipse
+
