@@ -5,6 +5,7 @@
 }
 
 .title {
+    margin-left: 46vw;
     padding-top: 1em;
     padding-bottom: 2em;
 }
@@ -19,103 +20,39 @@
 
 .images {
     margin-bottom: 3em;
-    opacity: .7;
-    animation-name: hoveroff;
-    animation-duration: .1s;
+    transition: .1s ease-in-out;
 }
 
 .images:hover {
-    opacity: 1;
-    animation-name: hoveron;
-    animation-duration: .1s;
+    transform: scale(1.1);
 }
 
-@keyframes hoveron {
-    from {
-        opacity: .7;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes hoveroff {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: .7;
+@media(max-width:1200px) {
+    .image-definer-wrapper {
+        margin-left: 7vw;
     }
 }
 
 @media(max-width:990px) {
-    .image-grid {
-        margin: 0px;
-    }
-    .wrapper-image-grid {
-        margin-left: 0px;
-    }
-    .title {
-        margin: auto;
-        width: 13%;
+    .image-definer-wrapper {
+        margin-left: 18vw;
     }
     .images {
-        margin-left: 20%;
         height: 30em;
-        display: flex;
-        justify-content: center;
-        animation-name: larger-reversed;
-        animation-duration: .2s;
-    }
-    .images:hover {
-        height: 31em;
-        animation-name: larger;
-        animation-duration: .2s;
-    }
-    @keyframes larger {
-        from {
-            height: 30em;
-        }
-        to {
-            height: 31em !important;
-        }
-    }
-    @keyframes larger-reversed {
-        from {
-            height: 31em;
-        }
-        to {
-            height: 30em !important;
-        }
     }
 }
 
 @media(max-width:618px) {
+    .image-definer-wrapper {
+        margin-left: 30vw;
+    }
     .images {
         height: 15em;
-        margin-left: 30%;
-        animation-name: larger-reversed;
-        animation-duration: .2s;
     }
-    .images:hover {
-        height: 16em !important;
-        animation-name: larger;
-        animation-duration: .2s;
-    }
-    @keyframes larger {
-        from {
-            height: 15em;
-        }
-        to {
-            height: 16em !important;
-        }
-    }
-    @keyframes larger-reversed {
-        from {
-            height: 16em;
-        }
-        to {
-            height: 15em !important;
-        }
+}
+
+@media(max-width:535px) {
+    .image-definer-wrapper {
+        margin-left: 20vw;
     }
 }
